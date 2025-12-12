@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="3 - Driver Control" href="driver.html"><link rel="prev" title="1 - Installation" href="installation.html">
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2025.09.25 -->
-        <title>Installation - dlib 0.0.1 documentation</title>
+        <title>2 - Configuration - dlib 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=acfd86a5" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -172,7 +172,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -191,7 +191,7 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API</a><input aria-label="Toggle navigation of API" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../hardware.html">Hardware</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../control.html">Control</a></li>
@@ -200,7 +200,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">1 - Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">2 - Configuration</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">2 - Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="driver.html">3 - Driver Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pid.html">4 - PID Control</a></li>
 </ul>
@@ -223,7 +223,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/tutorials/index.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/tutorials/config.md.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -236,43 +236,113 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">1 - Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-visual-studio-code">Install Visual Studio Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-pros-ide">Install PROS IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-dlib">Install dLib</a></li>
+          <section id="configuration">
+<h1>2 - Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h1>
+<section id="chassis">
+<h2>Chassis<a class="headerlink" href="#chassis" title="Link to this heading">¶</a></h2>
+<p>In order to properly configure the chassis, we must know a few things about the robot:</p>
+<ul class="simple">
+<li><p>Left Motor Group Ports</p></li>
+<li><p>Right Motor Group Ports</p></li>
+<li><p>Drivetrain Gearset</p></li>
+<li><p>RPM/Gear Ratio (depending on chassis config)</p></li>
+<li><p>Wheel Diameter</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">2 - Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="config.html#chassis">Chassis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="config.html#imu">IMU</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="driver.html">3 - Driver Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#controller">Controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#tank-drive-control">Tank Drive Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#arcade-drive-control">Arcade Drive Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#opcontrol">opcontrol</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="pid.html">4 - PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#define-pid">Define PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#tuning-pid">Tuning PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#angular-pid">Angular PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#linear-pid">Linear PID</a></li>
-</ul>
-</li>
-</ul>
+<p>First, we will find our motor ports. Each of our motors can either be forward (positive integer) or reverse (negative integer). Different chassis have different amounts of motors, and dLib allows for any amount of motors on either side.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">dlib</span><span class="o">::</span><span class="n">ChassisConfig</span><span class="w"> </span><span class="n">chassis_config</span><span class="w"> </span><span class="p">{</span>
+
+<span class="p">{</span><span class="mi">-12</span><span class="p">,</span><span class="mi">-13</span><span class="p">,</span><span class="mi">-1</span><span class="p">},</span>
+
+<span class="p">{</span><span class="mi">19</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">17</span><span class="p">},</span>
+
+<span class="p">}</span>
+</pre></div>
 </div>
+<p>Finding the remaining characteristics of the chassis is quite easy:</p>
+<ul class="simple">
+<li><p>To find motor gearset, just find the color of motor that you use in your chassis.</p></li>
+</ul>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Motor Type</p></th>
+<th class="head"><p><strong>RPM</strong></p></th>
+<th class="head"><p><strong>PROS Declaration</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Blue</strong></p></td>
+<td><p>600</p></td>
+<td><p>pros::MotorGearset::blue</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Green</strong></p></td>
+<td><p>200</p></td>
+<td><p>pros::MotorGearset::green</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Red</strong></p></td>
+<td><p>100</p></td>
+<td><p>pros::MotorGearset::red</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>To find RPM, take the RPM of your chassis’ motor and multiply it by the gear ratio on your robot.</p></li>
+</ul>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Gear Ratio</p></th>
+<th class="head"><p><strong>Motor RPM</strong></p></th>
+<th class="head"><p><strong>Driven RPM</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>36:48</strong></p></td>
+<td><p>600</p></td>
+<td><p>450 (600*(36/48))</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>12:60</strong></p></td>
+<td><p>600</p></td>
+<td><p>120 (600*(12/60))</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>2:1</strong></p></td>
+<td><p>200</p></td>
+<td><p>400 (200*(2/1))</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>You can find your wheel diameter with a ruler, or by visiting the VEX website and finding your exact wheel.</p></li>
+</ul>
+<p><strong>Ultimately, you have finally created the chassis config, and now you can do a bunch of things with the chassis!</strong></p>
+</section>
+<section id="imu">
+<h2>IMU<a class="headerlink" href="#imu" title="Link to this heading">¶</a></h2>
+<p>Creating the IMU is pretty simple, all you need to do is provide the IMU’s port and an optional scalar to correct IMU drift.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">dlib</span><span class="o">::</span><span class="n">ImuConfig</span><span class="w">  </span><span class="n">imu_config</span><span class="w"> </span><span class="p">{</span>
+<span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="c1">// imu port</span>
+<span class="mi">1</span><span class="w"> </span><span class="c1">// optional imu scaling constant</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>To find the scaling constant, we developed a test that you can do in order to get it easily:</p>
+<ol class="arabic simple">
+<li><p>Place the robot flush to the wall and start the code.</p></li>
+<li><p>With the code started, move the robot away from the wall with your hand (it shouldn’t matter, but try to keep it straight)</p></li>
+<li><p>Spin the bot around 10 times using your controller (come back to this after reading the driver control tutorial if you need it)</p></li>
+<li><p>Observe the IMU heading after the ten spins (it should be a number close to 3600 degrees)</p></li>
+<li><p>Take the wanted heading and divide it by the observed heading ($<code class="docutils literal notranslate"><span class="pre">3600/observed</span> </code>$)</p></li>
+<li><p>The number that you get from this is your scaling constant! Run the test a second time with this constant and see if the number is closer.</p></li>
+</ol>
+<p><strong>Congrats! You have configured a chassis &amp; an IMU.</strong></p>
+</section>
 </section>
 
         </article>
@@ -280,8 +350,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="driver.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">3 - Driver Control</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="installation.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">1 - Installation</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -300,8 +388,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">2 - Configuration</a><ul>
+<li><a class="reference internal" href="#chassis">Chassis</a></li>
+<li><a class="reference internal" href="#imu">IMU</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

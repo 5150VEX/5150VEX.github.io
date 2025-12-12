@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="4 - PID Control" href="pid.html"><link rel="prev" title="2 - Configuration" href="config.html">
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2025.09.25 -->
-        <title>Installation - dlib 0.0.1 documentation</title>
+        <title>3 - Driver Control - dlib 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=acfd86a5" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -172,7 +172,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -191,7 +191,7 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API</a><input aria-label="Toggle navigation of API" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../hardware.html">Hardware</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../control.html">Control</a></li>
@@ -201,7 +201,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">1 - Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config.html">2 - Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="driver.html">3 - Driver Control</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">3 - Driver Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pid.html">4 - PID Control</a></li>
 </ul>
 
@@ -223,7 +223,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/tutorials/index.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/tutorials/driver.md.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -236,43 +236,79 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">1 - Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-visual-studio-code">Install Visual Studio Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-pros-ide">Install PROS IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-dlib">Install dLib</a></li>
+          <section id="driver-control">
+<h1>3 - Driver Control<a class="headerlink" href="#driver-control" title="Link to this heading">¶</a></h1>
+<section id="controller">
+<h2>Controller<a class="headerlink" href="#controller" title="Link to this heading">¶</a></h2>
+<p>A controller contains two joysticks, both having an x axis and a y axis. Driver control is extremely customizable in dLib, so we can elect to use or not use any of these joysticks and any of these axes.</p>
+</section>
+<section id="tank-drive-control">
+<h2>Tank Drive Control<a class="headerlink" href="#tank-drive-control" title="Link to this heading">¶</a></h2>
+<p>Tank control is pretty easy, and works like this:</p>
+<ul class="simple">
+<li><p>Left Joystick Y Axis: Left Motors fwd/reverse</p></li>
+<li><p>Right Joystick Y Axis: Right Motors fwd/reverse</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">2 - Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="config.html#chassis">Chassis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="config.html#imu">IMU</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="driver.html">3 - Driver Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#controller">Controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#tank-drive-control">Tank Drive Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#arcade-drive-control">Arcade Drive Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="driver.html#opcontrol">opcontrol</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="pid.html">4 - PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#define-pid">Define PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#tuning-pid">Tuning PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#angular-pid">Angular PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pid.html#linear-pid">Linear PID</a></li>
-</ul>
-</li>
-</ul>
+<p>The code in dLib would look something like this:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w">  </span><span class="nf">Chassis::arcade</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">left_power</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">right_power</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">left_motors</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">left_power</span><span class="p">);</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">right_motors</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">right_power</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
 </div>
+<p>You can adjust joystick sensitivity by applying a multiplier to left/right power.
+You put this function into the chassis.cpp class so that it can be accessed.</p>
+</section>
+<section id="arcade-drive-control">
+<h2>Arcade Drive Control<a class="headerlink" href="#arcade-drive-control" title="Link to this heading">¶</a></h2>
+<p>Arcade drive control is what the creators of dLib love to use, and as such it is baked into dLib. Arcade works like this:</p>
+<p><strong>2 Joystick Arcade</strong></p>
+<ul class="simple">
+<li><p>Left Joystick Y Axis: Power (fwd/reverse)</p></li>
+<li><p>Right Joystick X Axis: Turn (left/right)</p></li>
+<li><p>Left moves with Power + Turn, right moves with Power - Turn</p></li>
+</ul>
+<p><strong>1 Joystick Arcade</strong></p>
+<ul class="simple">
+<li><p>Left/Right Joystick Y Axis: Power (fwd/reverse)</p></li>
+<li><p>Left/Right Joystick X Axis: Turn (left/right)</p></li>
+<li><p>Whichever joystick you choose controls both power and turn with the x and y axes</p></li>
+</ul>
+<p>The code in dLib looks like this:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w">  </span><span class="nf">Chassis::arcade</span><span class="p">(</span><span class="k">const</span><span class="w">  </span><span class="kt">int32_t</span><span class="w">  </span><span class="n">power</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w">  </span><span class="kt">int32_t</span><span class="w">  </span><span class="n">turn</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">left_motors</span><span class="p">.</span><span class="n">move</span><span class="p">((</span><span class="n">power</span><span class="w">  </span><span class="o">+</span><span class="w">  </span><span class="n">turn</span><span class="p">));</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">right_motors</span><span class="p">.</span><span class="n">move</span><span class="p">((</span><span class="n">power</span><span class="w">  </span><span class="o">-</span><span class="w">  </span><span class="n">turn</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You have more free reign over customization for joystick sensitivity because you can adjust power and turn separately.
+You put this function into the chassis.cpp class so that it can be accessed.</p>
+</section>
+<section id="opcontrol">
+<h2>opcontrol<a class="headerlink" href="#opcontrol" title="Link to this heading">¶</a></h2>
+<p>We need to put our drive control into a loop so that it can update consistently to fit controller values. The default PROS template includes a function opcontrol, and here is what it should look like:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">opcontrol</span><span class="p">(){</span>
+<span class="w">	</span><span class="n">pros</span><span class="o">::</span><span class="n">Controller</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pros</span><span class="o">::</span><span class="n">Controller</span><span class="p">(</span><span class="n">pros</span><span class="o">::</span><span class="n">E_CONTROLLER_MASTER</span><span class="p">);</span>
+<span class="w">	</span><span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+<span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">power</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">master</span><span class="p">.</span><span class="n">get_analog</span><span class="p">(</span><span class="n">pros</span><span class="o">::</span><span class="n">E_CONTROLLER_ANALOG_LEFT_Y</span><span class="p">);</span>
+<span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">turn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">master</span><span class="p">.</span><span class="n">get_analog</span><span class="p">(</span><span class="n">pros</span><span class="o">::</span><span class="n">E_CONTROLLER_ANALOG_RIGHT_X</span><span class="p">);</span>
+<span class="w">		</span><span class="n">robot</span><span class="p">.</span><span class="n">chassis</span><span class="p">.</span><span class="n">arcade</span><span class="p">(</span><span class="n">power</span><span class="p">,</span><span class="n">turn</span><span class="p">);</span><span class="w"> </span><span class="c1">// or tank(power,turn);</span>
+<span class="w">		</span>
+
+<span class="w">		</span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w"> </span><span class="c1">// add a delay to prevent lag</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Once you have this, give it a spin and see how your bot moves! You may need to adjust your chassis config if the robot behaves incorrectly in driver control.</p>
+<p>Congrats! You have created driver control.</p>
+</section>
 </section>
 
         </article>
@@ -280,8 +316,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="pid.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">4 - PID Control</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="config.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">2 - Configuration</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -300,8 +354,30 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">3 - Driver Control</a><ul>
+<li><a class="reference internal" href="#controller">Controller</a></li>
+<li><a class="reference internal" href="#tank-drive-control">Tank Drive Control</a></li>
+<li><a class="reference internal" href="#arcade-drive-control">Arcade Drive Control</a></li>
+<li><a class="reference internal" href="#opcontrol">opcontrol</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

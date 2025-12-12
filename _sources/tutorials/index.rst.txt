@@ -6,3 +6,6 @@ Installation
    :caption: Contents:
 
    installation
+   config
+   driver
+   pid
