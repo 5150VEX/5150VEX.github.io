@@ -1,4 +1,4 @@
-# Coordinate-Based Motion
+# 5 - Coordinate-Based Motion
 ## Angular Motion
 There are two types of angular motion inside of dLib (more can be added):
 * turn_with_pid: turns to an absolute heading that is relative to the start heading of the bot
