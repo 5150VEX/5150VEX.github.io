@@ -1,4 +1,4 @@
-# 3 - Driver Control
+# Driver Control
 ## Controller
 A controller contains two joysticks, both having an x axis and a y axis. Driver control is extremely customizable in dLib, so we can elect to use or not use any of these joysticks and any of these axes.
 

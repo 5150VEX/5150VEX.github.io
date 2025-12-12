@@ -200,11 +200,14 @@
 <li class="toctree-l2"><a class="reference internal" href="utilities.html">Utilities</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/installation.html">1 - Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/config.html">2 - Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/driver.html">3 - Driver Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/pid.html">4 - PID Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/coordinatebasedmotion.html">5 - Coordinate-Based Motion</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials/index.html">Tutorials</a><input aria-label="Toggle navigation of Tutorials" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/installation.html">1. Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/config.html">2. Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/driver.html">3. Driver Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/pid.html">4. PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/coordinatebasedmotion.html">5. Coordinate-Based Motion</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -250,183 +253,19 @@
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hardware.html">Hardware</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7ChassisE"><code class="docutils literal notranslate"><span class="pre">Chassis</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis10initializeEv"><code class="docutils literal notranslate"><span class="pre">Chassis::initialize()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis4moveE7int32_t"><code class="docutils literal notranslate"><span class="pre">Chassis::move()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis12move_voltageEd"><code class="docutils literal notranslate"><span class="pre">Chassis::move_voltage()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis4turnE7int32_t"><code class="docutils literal notranslate"><span class="pre">Chassis::turn()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis12turn_voltageEd"><code class="docutils literal notranslate"><span class="pre">Chassis::turn_voltage()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis6arcadeE7int32_t7int32_t"><code class="docutils literal notranslate"><span class="pre">Chassis::arcade()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib7Chassis5brakeEv"><code class="docutils literal notranslate"><span class="pre">Chassis::brake()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis27revolutions_to_displacementEd"><code class="docutils literal notranslate"><span class="pre">Chassis::revolutions_to_displacement()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis15rpm_to_velocityEd"><code class="docutils literal notranslate"><span class="pre">Chassis::rpm_to_velocity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis24left_motors_displacementEv"><code class="docutils literal notranslate"><span class="pre">Chassis::left_motors_displacement()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis25right_motors_displacementEv"><code class="docutils literal notranslate"><span class="pre">Chassis::right_motors_displacement()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis26forward_motor_displacementEv"><code class="docutils literal notranslate"><span class="pre">Chassis::forward_motor_displacement()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis20left_motors_velocityEv"><code class="docutils literal notranslate"><span class="pre">Chassis::left_motors_velocity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis21right_motors_velocityEv"><code class="docutils literal notranslate"><span class="pre">Chassis::right_motors_velocity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib7Chassis22forward_motor_velocityEv"><code class="docutils literal notranslate"><span class="pre">Chassis::forward_motor_velocity()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware.html">Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control.html">Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematics.html">Kinematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trajectories.html">Trajectories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html">Utilities</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="hardware.html#_CPPv4N4dlib10MotorGroupE"><code class="docutils literal notranslate"><span class="pre">MotorGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib10MotorGroup4moveEd"><code class="docutils literal notranslate"><span class="pre">MotorGroup::move()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib10MotorGroup12move_voltageEd"><code class="docutils literal notranslate"><span class="pre">MotorGroup::move_voltage()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib10MotorGroup12get_positionEv"><code class="docutils literal notranslate"><span class="pre">MotorGroup::get_position()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib10MotorGroup12get_velocityEv"><code class="docutils literal notranslate"><span class="pre">MotorGroup::get_velocity()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="hardware.html#_CPPv4N4dlib5MotorE"><code class="docutils literal notranslate"><span class="pre">Motor</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib5Motor12get_positionEv"><code class="docutils literal notranslate"><span class="pre">Motor::get_position()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib5Motor12get_velocityEv"><code class="docutils literal notranslate"><span class="pre">Motor::get_velocity()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="hardware.html#_CPPv4N4dlib3ImuE"><code class="docutils literal notranslate"><span class="pre">Imu</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib3Imu10initializeEv"><code class="docutils literal notranslate"><span class="pre">Imu::initialize()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib3Imu12get_rotationEv"><code class="docutils literal notranslate"><span class="pre">Imu::get_rotation()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib3Imu11get_headingEv"><code class="docutils literal notranslate"><span class="pre">Imu::get_heading()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="hardware.html#_CPPv4N4dlib8RotationE"><code class="docutils literal notranslate"><span class="pre">Rotation</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib8Rotation10initializeEv"><code class="docutils literal notranslate"><span class="pre">Rotation::initialize()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib8Rotation12get_positionEv"><code class="docutils literal notranslate"><span class="pre">Rotation::get_position()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib8Rotation12get_velocityEv"><code class="docutils literal notranslate"><span class="pre">Rotation::get_velocity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib8Rotation23get_linear_displacementEv"><code class="docutils literal notranslate"><span class="pre">Rotation::get_linear_displacement()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4NK4dlib8Rotation19get_linear_velocityEv"><code class="docutils literal notranslate"><span class="pre">Rotation::get_linear_velocity()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="hardware.html#_CPPv4N4dlib5TimerE"><code class="docutils literal notranslate"><span class="pre">Timer</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib5Timer5resetEv"><code class="docutils literal notranslate"><span class="pre">Timer::reset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib5Timer14get_start_timeEv"><code class="docutils literal notranslate"><span class="pre">Timer::get_start_time()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib5Timer16get_current_timeEv"><code class="docutils literal notranslate"><span class="pre">Timer::get_current_time()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="hardware.html#_CPPv4N4dlib5Timer16get_elapsed_timeEv"><code class="docutils literal notranslate"><span class="pre">Timer::get_elapsed_time()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="control.html">Control</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="control.html#_CPPv4N4dlib3PidE"><code class="docutils literal notranslate"><span class="pre">Pid</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib3Pid5resetEv"><code class="docutils literal notranslate"><span class="pre">Pid::reset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib3Pid6updateEdd"><code class="docutils literal notranslate"><span class="pre">Pid::update()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib3Pid9get_gainsEv"><code class="docutils literal notranslate"><span class="pre">Pid::get_gains()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib3Pid9set_gainsE8PidGains"><code class="docutils literal notranslate"><span class="pre">Pid::set_gains()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib3Pid9get_errorEv"><code class="docutils literal notranslate"><span class="pre">Pid::get_error()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib3Pid14get_derivativeEv"><code class="docutils literal notranslate"><span class="pre">Pid::get_derivative()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib3Pid5get_pEv"><code class="docutils literal notranslate"><span class="pre">Pid::get_p()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib3Pid5get_iEv"><code class="docutils literal notranslate"><span class="pre">Pid::get_i()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib3Pid5get_dEv"><code class="docutils literal notranslate"><span class="pre">Pid::get_d()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="control.html#_CPPv4N4dlib8PidGainsE"><code class="docutils literal notranslate"><span class="pre">PidGains</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib8PidGains2kpE"><code class="docutils literal notranslate"><span class="pre">PidGains::kp</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib8PidGains2kiE"><code class="docutils literal notranslate"><span class="pre">PidGains::ki</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib8PidGains2kdE"><code class="docutils literal notranslate"><span class="pre">PidGains::kd</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="control.html#_CPPv4I0EN4dlib11FeedforwardE"><code class="docutils literal notranslate"><span class="pre">Feedforward</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib11Feedforward9calculateEdd"><code class="docutils literal notranslate"><span class="pre">Feedforward::calculate()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4NK4dlib11Feedforward9get_gainsEv"><code class="docutils literal notranslate"><span class="pre">Feedforward::get_gains()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib11Feedforward9set_gainsE16FeedforwardGains"><code class="docutils literal notranslate"><span class="pre">Feedforward::set_gains()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="control.html#_CPPv4N4dlib16FeedforwardGainsE"><code class="docutils literal notranslate"><span class="pre">FeedforwardGains</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib16FeedforwardGains2ksE"><code class="docutils literal notranslate"><span class="pre">FeedforwardGains::ks</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib16FeedforwardGains2kvE"><code class="docutils literal notranslate"><span class="pre">FeedforwardGains::kv</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib16FeedforwardGains2kaE"><code class="docutils literal notranslate"><span class="pre">FeedforwardGains::ka</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="control.html#_CPPv4I0EN4dlib16ErrorTimeSettlerE"><code class="docutils literal notranslate"><span class="pre">ErrorTimeSettler</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib16ErrorTimeSettler10is_settledEdd"><code class="docutils literal notranslate"><span class="pre">ErrorTimeSettler::is_settled()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib16ErrorTimeSettler5resetEv"><code class="docutils literal notranslate"><span class="pre">ErrorTimeSettler::reset()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="control.html#_CPPv4N4dlib22ErrorDerivativeSettlerE"><code class="docutils literal notranslate"><span class="pre">ErrorDerivativeSettler</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib22ErrorDerivativeSettler10is_settledEdd"><code class="docutils literal notranslate"><span class="pre">ErrorDerivativeSettler::is_settled()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="control.html#_CPPv4N4dlib22ErrorDerivativeSettler5resetEv"><code class="docutils literal notranslate"><span class="pre">ErrorDerivativeSettler::reset()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="kinematics.html">Kinematics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib8Vector2dE"><code class="docutils literal notranslate"><span class="pre">Vector2d</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib8Vector2d1xE"><code class="docutils literal notranslate"><span class="pre">Vector2d::x</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib8Vector2d1yE"><code class="docutils literal notranslate"><span class="pre">Vector2d::y</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib6Pose2dE"><code class="docutils literal notranslate"><span class="pre">Pose2d</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib6Pose2d1xE"><code class="docutils literal notranslate"><span class="pre">Pose2d::x</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib6Pose2d1yE"><code class="docutils literal notranslate"><span class="pre">Pose2d::y</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib6Pose2d5thetaE"><code class="docutils literal notranslate"><span class="pre">Pose2d::theta</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib8OdometryE"><code class="docutils literal notranslate"><span class="pre">Odometry</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib8Odometry6updateEdddd"><code class="docutils literal notranslate"><span class="pre">Odometry::update()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4NK4dlib8Odometry12get_positionEv"><code class="docutils literal notranslate"><span class="pre">Odometry::get_position()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4N4dlib8Odometry12set_positionE6Pose2d"><code class="docutils literal notranslate"><span class="pre">Odometry::set_position()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4NK4dlib8Odometry15displacement_toE8Vector2db"><code class="docutils literal notranslate"><span class="pre">Odometry::displacement_to()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="kinematics.html#_CPPv4NK4dlib8Odometry8angle_toE8Vector2db"><code class="docutils literal notranslate"><span class="pre">Odometry::angle_to()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="trajectories.html">Trajectories</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib15ProfileSetpointE"><code class="docutils literal notranslate"><span class="pre">ProfileSetpoint</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4NK4dlib15ProfileSetpoint6directEb"><code class="docutils literal notranslate"><span class="pre">ProfileSetpoint::direct()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib21TrapezoidProfileStageE"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfileStage</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib21TrapezoidProfileStage12AcceleratingE"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfileStage::Accelerating</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib21TrapezoidProfileStage8CoastingE"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfileStage::Coasting</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib21TrapezoidProfileStage12DeceleratingE"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfileStage::Decelerating</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib21TrapezoidProfileStage4DoneE"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfileStage::Done</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib16TrapezoidProfileE"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfile</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4NK4dlib16TrapezoidProfile5stageEd"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfile::stage()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4NK4dlib16TrapezoidProfile9calculateEd"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfile::calculate()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="trajectories.html#_CPPv4N4dlib16TrapezoidProfile16from_constraintsEddd"><code class="docutils literal notranslate"><span class="pre">TrapezoidProfile::from_constraints()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="utilities.html">Utilities</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="utilities.html#_CPPv4N4dlib12linear_errorEdd"><code class="docutils literal notranslate"><span class="pre">linear_error()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="utilities.html#_CPPv4N4dlib14sanitize_angleEd"><code class="docutils literal notranslate"><span class="pre">sanitize_angle()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="utilities.html#_CPPv4N4dlib13angular_errorEdd"><code class="docutils literal notranslate"><span class="pre">angular_error()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="utilities.html#_CPPv4N4dlib15relative_targetEdd"><code class="docutils literal notranslate"><span class="pre">relative_target()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="utilities.html#_CPPv4N4dlib11gearset_rpmEN4pros12MotorGearsetE"><code class="docutils literal notranslate"><span class="pre">gearset_rpm()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/installation.html">1 - Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/installation.html#install-visual-studio-code">Install Visual Studio Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/installation.html#install-pros-ide">Install PROS IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/installation.html#install-dlib">Install dLib</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/config.html">2 - Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/config.html#chassis">Chassis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/config.html#imu">IMU</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/driver.html">3 - Driver Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/driver.html#controller">Controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/driver.html#tank-drive-control">Tank Drive Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/driver.html#arcade-drive-control">Arcade Drive Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/driver.html#opcontrol">opcontrol</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/pid.html">4 - PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/pid.html#define-pid">Define PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/pid.html#tuning-pid">Tuning PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/pid.html#angular-pid">Angular PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/pid.html#linear-pid">Linear PID</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/coordinatebasedmotion.html">5 - Coordinate-Based Motion</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/coordinatebasedmotion.html#angular-motion">Angular Motion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/coordinatebasedmotion.html#lateral-motion">Lateral Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/installation.html">1. Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/config.html">2. Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/driver.html">3. Driver Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/pid.html">4. PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/coordinatebasedmotion.html">5. Coordinate-Based Motion</a></li>
 </ul>
 </li>
 </ul>

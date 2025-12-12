@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="prev" title="3 - Driver Control" href="driver.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="5. Coordinate-Based Motion" href="coordinatebasedmotion.html"><link rel="prev" title="3. Driver Control" href="driver.html">
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2025.09.25 -->
-        <title>4 - PID Control - dlib 0.0.1 documentation</title>
+        <title>4. PID Control - dlib 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=acfd86a5" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -200,10 +200,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../utilities.html">Utilities</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">1 - Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">2 - Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="driver.html">3 - Driver Control</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">4 - PID Control</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Tutorials</a><input aria-label="Toggle navigation of Tutorials" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">1. Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html">2. Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="driver.html">3. Driver Control</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">4. PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coordinatebasedmotion.html">5. Coordinate-Based Motion</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -243,9 +247,9 @@
         </div>
         <article role="main" id="furo-main-content">
           <section id="pid-control">
-<h1>4 - PID Control<a class="headerlink" href="#pid-control" title="Link to this heading">¶</a></h1>
+<h1><span class="section-number">4. </span>PID Control<a class="headerlink" href="#pid-control" title="Link to this heading">¶</a></h1>
 <section id="define-pid">
-<h2>Define PID<a class="headerlink" href="#define-pid" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">4.1. </span>Define PID<a class="headerlink" href="#define-pid" title="Link to this heading">¶</a></h2>
 <p>A PID is a feedback controller that is extremely popular in VEX robotics.  It takes an input (the error &amp; the derivative of whatever you’re measuring) and an output (voltage)
 Error is the distance from a setpoint. Voltage is closely proportional to error.</p>
 <div class="admonition important">
@@ -254,7 +258,7 @@ Error is the distance from a setpoint. Voltage is closely proportional to error.
 </div>
 </section>
 <section id="tuning-pid">
-<h2>Tuning PID<a class="headerlink" href="#tuning-pid" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">4.2. </span>Tuning PID<a class="headerlink" href="#tuning-pid" title="Link to this heading">¶</a></h2>
 <p>We have a PID config in dLib, and it looks like this:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">dlib</span><span class="o">::</span><span class="n">PidConfig</span><span class="w">  </span><span class="n">linear_pid_config</span><span class="w"> </span><span class="p">{</span>
 <span class="p">{</span>
@@ -281,7 +285,7 @@ Error is the distance from a setpoint. Voltage is closely proportional to error.
 </ul>
 </section>
 <section id="angular-pid">
-<h2>Angular PID<a class="headerlink" href="#angular-pid" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">4.3. </span>Angular PID<a class="headerlink" href="#angular-pid" title="Link to this heading">¶</a></h2>
 <p>The robot class has a <code class="docutils literal notranslate"><span class="pre">turn_with_pid</span></code> method that changes with the adjustment of the <code class="docutils literal notranslate"><span class="pre">turn_pid_config</span></code>.</p>
 <p>You can conduct a PID movement in the autonomous function. Here is how to do turn:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">autonomous</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -293,7 +297,7 @@ Error is the distance from a setpoint. Voltage is closely proportional to error.
 </div>
 </section>
 <section id="linear-pid">
-<h2>Linear PID<a class="headerlink" href="#linear-pid" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">4.4. </span>Linear PID<a class="headerlink" href="#linear-pid" title="Link to this heading">¶</a></h2>
 <p>The robot class has a <code class="docutils literal notranslate"><span class="pre">move_with_pid</span></code> method that changes with the adjustment of the <code class="docutils literal notranslate"><span class="pre">move_pid_config</span></code>.</p>
 <p>You can conduct a PID movement in the autonomous function. Here is how to do turn:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">autonomous</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -311,7 +315,15 @@ Error is the distance from a setpoint. Voltage is closely proportional to error.
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="coordinatebasedmotion.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><span class="section-number">5. </span>Coordinate-Based Motion</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="driver.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -319,7 +331,7 @@ Error is the distance from a setpoint. Voltage is closely proportional to error.
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">3 - Driver Control</div>
+                <div class="title"><span class="section-number">3. </span>Driver Control</div>
                 
               </div>
             </a>
@@ -353,11 +365,11 @@ Error is the distance from a setpoint. Voltage is closely proportional to error.
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">4 - PID Control</a><ul>
-<li><a class="reference internal" href="#define-pid">Define PID</a></li>
-<li><a class="reference internal" href="#tuning-pid">Tuning PID</a></li>
-<li><a class="reference internal" href="#angular-pid">Angular PID</a></li>
-<li><a class="reference internal" href="#linear-pid">Linear PID</a></li>
+<li><a class="reference internal" href="#">4. PID Control</a><ul>
+<li><a class="reference internal" href="#define-pid">4.1. Define PID</a></li>
+<li><a class="reference internal" href="#tuning-pid">4.2. Tuning PID</a></li>
+<li><a class="reference internal" href="#angular-pid">4.3. Angular PID</a></li>
+<li><a class="reference internal" href="#linear-pid">4.4. Linear PID</a></li>
 </ul>
 </li>
 </ul>

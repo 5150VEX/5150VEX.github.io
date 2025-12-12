@@ -1,4 +1,4 @@
-# 4 - PID Control
+# PID Control
 ## Define PID
 A PID is a feedback controller that is extremely popular in VEX robotics.  It takes an input (the error & the derivative of whatever you're measuring) and an output (voltage)
 Error is the distance from a setpoint. Voltage is closely proportional to error.
