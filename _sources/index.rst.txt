@@ -18,4 +18,5 @@ Actual docs goes crazy
    tutorials/config
    tutorials/driver
    tutorials/pid
+   tutorials/coordinatebasedmotion
    

@@ -67,7 +67,7 @@ To find the scaling constant, we developed a test that you can do in order to ge
 2. With the code started, move the robot away from the wall with your hand (it shouldn't matter, but try to keep it straight)
 3. Spin the bot around 10 times using your controller (come back to this after reading the driver control tutorial if you need it)
 4. Observe the IMU heading after the ten spins (it should be a number close to 3600 degrees)
-5. Take the wanted heading and divide it by the observed heading ($`3600/observed `$)
+5. Take the wanted heading and divide it by the observed heading ``3600/observed``
 6. The number that you get from this is your scaling constant! Run the test a second time with this constant and see if the number is closer.
 
 **Congrats! You have configured a chassis & an IMU.**
